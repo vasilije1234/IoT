@@ -1,0 +1,390 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+
+html,
+body,
+.ui-page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-page,
+.ui-page * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ui-page .ui-content {
+  height: inherit;
+}
+
+.ui-page .ui-header {
+    background: #F9B233 !important;
+    border: none;
+}
+.ui-page .ui-footer {
+    background: #F9B233 !important;
+    border: none;
+}
+/*
+.ui-content{
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
+    linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
+    linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+    background-size:40px 60px;
+}
+*/
+
+.panelNaslov{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.block{
+  padding:.25rem 0;
+  margin:.25rem 0;
+  background: #00ccff;
+  border:1px solid #111;
+  border-radius: 3px;
+}
+button{
+  background: gray:
+  color:#333;
+  border-radius: 3px;
+  border:1px solid #ccc;
+  margin:.25rem;
+}
+.pictures{
+
+}
+.controls{
+  margin-top:100%;
+}
+/* index.css */
+
+div.rect_class {
+    width: 280px;
+    height: 160px;
+
+    /* Make inner part of rectangle transparent */
+    background-color: rgba(255, 255, 255, 0);
+
+    /* Center vertically AND horizontally */
+    position: absolute; /*it can be fixed too*/
+  	left: 0; right: 0;
+  	top: 0; bottom: 0;
+  	margin: auto;
+
+  	/* This to solve "the content will not be cut when the window is smaller than the content": */
+  	max-width: 100%;
+  	max-height: 100%;
+  	overflow: auto;
+
+  	/* COOL BORDER */
+  	border-width: 20px;
+    border-style: solid;
+      /* You need to place border.png into img folder */
+  	border-image: url(../img/border.png) 50 round;
+
+  	/* SHADOW EFFECT darkens everything outside rectangle */
+  	box-shadow: 0 0 500px 5000px rgba(0, 0, 0, 0.4);
+}
+
+img.flash_class {
+    /* Center horizontally */
+    position: absolute; margin: auto;
+
+    width: 55px; height: 55px;
+    top: 20px; right: 20px;
+}
+
+img.take_pic_class {
+    /* Center horizontally */
+    position: absolute; margin: auto;
+
+    width: 75px; height: 75px;
+    left: 0px; right: 0px; bottom: 20px;
+}
+img.SlikaLoading {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 300px;
+   height: 188px;
+   margin-top: -94px; /* Half the height */
+   margin-left: -150px; /* Half the width */
+}
+.Lista{
+    margin: 0 20px;
+    list-style-type: none;
+    padding: 0;
+}
+.ListaLi{
+    position: relative;
+    margin: 13px 0px;
+    padding: 0px;
+    padding-left: 70px;
+    height: 70px;
+    background-image: url('img/DugmeSkeniranjeIkonica.png');
+    background-size: 70px 70px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    box-sizing:border-box;
+    text-shadow: none;
+    -moz-box-sizing:border-box; /* Firefox */
+    overflow: hidden;
+}
+.ListaLi > p{
+    margin: 0;
+    height: 70px;
+    line-height: 70px;
+    padding: 0px;
+    padding-left: 15px;
+    text-align: left;
+    font-weight: bold;
+    background-color: #F9B233;   
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    overflow: hidden;
+}
+.PozadinaTop{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 130px;
+    background-position: right -15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/PozadinaTop.png');
+}
+
+/* Stranica - ocjena proizvoda */
+.PozadinaTopOcjena{
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+    height: 170px;
+    background-position: right -15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/PozadinaTop.png');
+}
+
+.SlikaOcjenaProizvoda{
+    margin: 0;
+    position: relative;
+    height: 170px;
+}
+.NaslovOcjenaProizvoda{
+    position: relative;
+    text-shadow: none;
+    color: #F9B233;
+    font-weight: bold;
+}
+.DugmeOcjenaProizvoda{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F9B233;
+    font-weight: bold;
+}
+
+.tekstKomentarOcjena{
+    position: relative;
+    background-color: #F9B233;
+    padding: 5px;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    height: 130px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+
+.ocjenaOcjenaProizvoda{
+    position: relative;
+    margin: 10px 0px;
+    height: 50px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+/* Stranica - prijava proizvoda */
+/* Stranica - ocjena proizvoda */
+.PozadinaTopPrijavaProizvoda{
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    width: 100%;
+    height: 130px;
+    background-position: right -15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/PozadinaTopCrvena.png');
+}
+.OkvirPrijavaProizvoda{
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.NaslovPrijavaProizvoda{
+    position: relative;
+    color: #F9B233;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.TekstPrijavaProizvoda{
+    position: relative;
+    color: red;
+    text-shadow: none;
+}
+.TekstKomentarPrijavaProizvoda{
+    position: relative;
+    background-color: #F9B233;
+    padding: 5px;
+    width: 100%;
+    margin: 0px;
+    border: none;
+    height: 130px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+.DugmePrijavaProizvoda{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F9B233;
+    font-weight: bold;
+}
+
+
+/* Stranica - informacija o proizvodu */
+.NaslovProizvodInfo{
+    position: relative;
+    background-color: #F9B233;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    height: 60px;
+    line-height: 60px;    
+}
+
+.SlikaProizvodInfo{
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+.OpisProizvodInfo{
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+}
+.ListaProizvodInfo{
+    margin: 0 20px;
+    list-style-type: none;
+    padding: 0;
+}
+.ListaLiProizvodInfo{
+    position: relative;
+    margin: 13px 0px;
+    padding: 0px;
+    padding-left: 60px;
+    background-size: 30px 30px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    overflow: hidden;
+}
+.NaslovLiProizvodInfo{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: none;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    color: #F9B233;
+}
+.TekstLiProizvodInfo{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: bold;
+    text-shadow: none;
+    text-align: left;
+    font-weight: bold;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    color: rgb(200,200,200);
+}
+
+/* Stranica Informacije o proizvodu - upustvo */
+.DugmePocetakSkeniranja{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F9B233;
+    font-weight: bold;
+}
+.OkvirInfoHelp{
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+}
+.TekstInfoHelp{
+    position: relative;
+    text-shadow: none;
+    color: white;
+    padding: 10px;
+    background-color: #F9B233;
+}
+
+/* Stranica O projektu */
+.slikaOProjektu{
+    margin-top: 30px;
+ }
+.TekstOProjektu{
+    margin-top: 20px;
+    position: relative;
+    text-shadow: none;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    background-color: #F9B233;
+}
